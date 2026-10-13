@@ -1,0 +1,67 @@
+
+<section class="report-container">
+  <h1>{{ 'new-energy-report' | translate }}</h1>
+
+  <p>{{ 'register-energy-reports' | translate }}</p>
+
+  @if (error()) {
+    <p role="alert">{{ error() }}</p>
+  }
+
+  <form [formGroup]="form" (ngSubmit)="createReport()">
+
+    <mat-form-field appearance="outline">
+      <mat-label>{{ 'energy-type' | translate }}</mat-label>
+
+      <mat-select
+        formControlName="energyType"
+        [attr.aria-label]="'energy-type' | translate">
+
+        @for (type of energyTypes; track type) {
+          <mat-option [value]="type">
+            {{ type }}
+          </mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    @if (form.controls.energyType.value; as selectedType) {
+      <p class="energy-region">
+        {{ 'energy-region' | translate }}:
+        {{ energyRegions[selectedType] }}
+      </p>
+    }
+
+    <mat-form-field appearance="outline">
+      <mat-label>{{ 'regional-operator' | translate }}</mat-label>
+
+      <mat-select
+        formControlName="operatorId"
+        [attr.aria-label]="'regional-operator' | translate">
+
+        @for (operator of operators(); track operator.id) {
+          <mat-option [value]="operator.id">
+            {{ operator.fullName }}
+          </mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    <div class="form-actions">
+      <button
+        mat-raised-button
+        type="submit"
+        [disabled]="form.invalid || saving()">
+        {{ 'create' | translate }}
+      </button>
+
+      <button
+        mat-button
+        type="button"
+        (click)="cancel()">
+        {{ 'cancel' | translate }}
+      </button>
+    </div>
+
+  </form>
+</section>

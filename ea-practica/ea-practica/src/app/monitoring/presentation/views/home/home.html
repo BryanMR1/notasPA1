@@ -1,0 +1,21 @@
+
+<section class="home-container">
+  <h1>{{ 'home' | translate }}</h1>
+  <p>{{ 'international-energy-monitoring' | translate }}</p>
+
+  <h2>{{ 'my-energy-reports' | translate }}</h2>
+
+  @if (store.loading()) {
+    <p>Loading reports...</p>
+  } @else if (store.error()) {
+    <p role="alert">{{ store.error() }}</p>
+  } @else if (store.reports().length === 0) {
+    <p>{{ 'empty' | translate }}</p>
+  } @else {
+    <div class="reports-grid">
+      @for (report of store.reports(); track report.id) {
+        <app-energy-report-summary [report]="report" />
+      }
+    </div>
+  }
+</section>

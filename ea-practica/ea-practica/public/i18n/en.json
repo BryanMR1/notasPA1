@@ -1,0 +1,20 @@
+
+{
+  "home": "Home",
+  "new-energy-report": "New Energy Report",
+  "international-energy-monitoring": "International Energy Monitoring.",
+  "my-energy-reports": "My Energy Reports",
+  "register-energy-reports": "Register International Energy Reports",
+  "energy-type": "Energy Type",
+  "energy-region": "Energy Region",
+  "regional-operator": "Regional Operator",
+  "energy-consumption": "Energy Consumption",
+  "energy-production": "Energy Production",
+  "year": "Year",
+  "registered": "Registered",
+  "create": "Create",
+  "cancel": "Cancel",
+  "empty": "Empty",
+  "return-home": "Return to Home",
+  "page-not-found": "Page Not Found"
+}

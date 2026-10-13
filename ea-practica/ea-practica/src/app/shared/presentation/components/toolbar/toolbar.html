@@ -1,0 +1,31 @@
+<mat-toolbar>
+  <img
+    src="https://img.logo.dev/iea.org?token=YOUR_TOKEN"
+    alt="IEA Logo"
+    class="iea-logo"
+  />
+
+  <span>IEA Energy Monitoring Platform</span>
+
+  <span class="spacer"></span>
+
+  <a mat-button routerLink="/home">
+    {{ 'home' | translate }}
+  </a>
+
+  <a mat-button routerLink="/energy-reports/new">
+    {{ 'new-energy-report' | translate }}
+  </a>
+
+  <button mat-button type="button"
+          (click)="changeLanguage('en')"
+          aria-label="Switch to English">
+    EN
+  </button>
+
+  <button mat-button type="button"
+          (click)="changeLanguage('es')"
+          aria-label="Cambiar a español">
+    ES
+  </button>
+</mat-toolbar>

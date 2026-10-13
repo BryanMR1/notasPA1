@@ -1,0 +1,20 @@
+
+{
+  "home": "Inicio",
+  "new-energy-report": "Nuevo Reporte Energético",
+  "international-energy-monitoring": "Monitoreo Energético Internacional.",
+  "my-energy-reports": "Mis Reportes Energéticos",
+  "register-energy-reports": "Registrar Reportes Energéticos Internacionales",
+  "energy-type": "Tipo de Energía",
+  "energy-region": "Región Energética",
+  "regional-operator": "Operador Regional",
+  "energy-consumption": "Consumo de Energía",
+  "energy-production": "Producción de Energía",
+  "year": "Año",
+  "registered": "Registrado",
+  "create": "Crear",
+  "cancel": "Cancelar",
+  "empty": "Vacío",
+  "return-home": "Volver al Inicio",
+  "page-not-found": "Página No Encontrada"
+}

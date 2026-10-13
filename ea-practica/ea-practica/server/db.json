@@ -1,0 +1,38 @@
+{
+  "energy-monitoring-centers": [
+    {
+      "id": 1,
+      "name": "Solar Energy Center",
+      "energyType": "solar"
+    },
+    {
+      "id": 2,
+      "name": "Wind Energy Center",
+      "energyType": "wind"
+    }
+  ],
+  "energy-report-items": [
+    {
+      "id": 1,
+      "centerId": 1,
+      "energyType": "solar",
+      "countryCode": "US-MS",
+      "countryName": "United States",
+      "consumption": 150,
+      "production": 250,
+      "year": 2026,
+      "registeredAt": "2026-10-12T10:00:00"
+    },
+    {
+      "centerId": 1,
+      "energyType": "solar",
+      "countryCode": "US-AL",
+      "countryName": "United States",
+      "consumption": 80,
+      "production": 100,
+      "year": 2026,
+      "registeredAt": "2026-10-13T03:48:55.625Z",
+      "id": 2
+    }
+  ]
+}

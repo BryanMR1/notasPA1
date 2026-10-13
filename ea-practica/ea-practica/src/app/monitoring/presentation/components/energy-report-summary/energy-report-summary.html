@@ -1,0 +1,17 @@
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ report().countryName }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>Energy Type: {{ report().energyType }}</p>
+    <p>Energy Consumption: {{ report().consumption }}</p>
+    <p>Energy Production: {{ report().production }}</p>
+  </mat-card-content>
+
+  <mat-card-footer>
+    <p>Year: {{ report().year }}</p>
+    <p>Registered: {{ report().registeredAt | date:'medium' }}</p>
+  </mat-card-footer>
+</mat-card>

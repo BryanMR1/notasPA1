@@ -1,0 +1,14 @@
+mat-toolbar {
+  display: flex;
+  gap: 12px;
+}
+
+.iea-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.spacer {
+  flex: 1;
+}

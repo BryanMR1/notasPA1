@@ -1,0 +1,9 @@
+<section class="not-found">
+  <h1>404 - {{ 'page-not-found' | translate }}</h1>
+
+  <p>Route not found: {{ router.url }}</p>
+
+  <a mat-raised-button routerLink="/home">
+    {{ 'return-home' | translate }}
+  </a>
+</section>
